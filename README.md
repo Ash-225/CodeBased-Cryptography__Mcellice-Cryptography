@@ -1,14 +1,14 @@
-##### #SageMath with Django Live Chat App
+## SageMath with Django Live Chat App
 
-Prerequisites <br>
+## Prerequisites <br>
 
 ## Ensure you have Conda installed on your system.<br>
 
 ## Python and pip should be available in your environment.
 <br>
-## #Installation
+## Installation
 
-# #Step 1: Install SageMath
+## #Step 1: Install SageMath
 
 # -You can download and install SageMath using either Conda or pip:
 
