@@ -2,9 +2,9 @@
 
 Prerequisites <br>
 
-## ==>Ensure you have Conda installed on your system.<br>
+## Ensure you have Conda installed on your system.<br>
 
-## ==>Python and pip should be available in your environment.
+## Python and pip should be available in your environment.
 <br><br><br>
 #### #Installation
 
@@ -88,6 +88,6 @@ python manage.py runserver --noreload
 
 ### #Notes
 
-### >>Ensure the Sage environment is activated before running the Django application to avoid dependency issues.
+### Ensure the Sage environment is activated before running the Django application to avoid dependency issues.
 
-### >>The --noreload flag is used to prevent automatic server reloads, which can interfere with certain SageMath operations.
+### The --noreload flag is used to prevent automatic server reloads, which can interfere with certain SageMath operations.
