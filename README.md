@@ -5,14 +5,14 @@ Prerequisites <br>
 ## Ensure you have Conda installed on your system.<br>
 
 ## Python and pip should be available in your environment.
-<br><br><br>
-#### #Installation
+<br>
+## #Installation
 
-## #Step 1: Install SageMath
+# #Step 1: Install SageMath
 
-## -You can download and install SageMath using either Conda or pip:
+# -You can download and install SageMath using either Conda or pip:
 
-## -Using Conda:
+# -Using Conda:
 ```
 conda install -c conda-forge sage
 ```
