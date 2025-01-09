@@ -6,7 +6,7 @@
 
 ## Python and pip should be available in your environment.
 <br>
-## #Installation <br>
+
 ## #Step 1: Install SageMath
 
 # -You can download and install SageMath using either Conda or pip:
