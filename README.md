@@ -13,9 +13,9 @@ Prerequisites <br>
 ## -You can download and install SageMath using either Conda or pip:
 
 ## -Using Conda:
-'''
+```
 conda install -c conda-forge sage
-'''
+```
 ## -Using pip:
 '''
 pip install sage
