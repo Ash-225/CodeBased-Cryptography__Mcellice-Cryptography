@@ -1,89 +1,93 @@
-SageMath with Django Live Chat App
+##### #SageMath with Django Live Chat App
 
-This README provides instructions for setting up and running a Django live chat application integrated with SageMath.
+Prerequisites <br>
 
-Prerequisites
+## ==>Ensure you have Conda installed on your system.<br>
 
-Ensure you have Conda installed on your system.
+## ==>Python and pip should be available in your environment.
+<br><br><br>
+#### #Installation
 
-Python and pip should be available in your environment.
+## #Step 1: Install SageMath
 
-Installation
+## -You can download and install SageMath using either Conda or pip:
 
-Step 1: Install SageMath
-
-You can download and install SageMath using either Conda or pip:
-
-Using Conda:
-
+## -Using Conda:
+'''
 conda install -c conda-forge sage
-
-Using pip:
-
+'''
+## -Using pip:
+'''
 pip install sage
+'''
+## -Step 2: Activate Sage Environment
 
-Step 2: Activate Sage Environment
-
-Once SageMath is installed, activate the Sage environment using the following command:
-
+## -Once SageMath is installed, activate the Sage environment using the following command:
+'''
 conda activate sage
+'''
+<br><br><br>
 
-Django Chat Configuration
+### #Django Chat Configuration
 
-Getting the Files
+### #Getting the Files <br>
 
-Download the zip file or clone the repository and remove the .git folder:
-
+### #Download the zip file or clone the repository and remove the .git folder:
+'''
 git clone https://github.com/Ash-225/DjangoBase . && rm -rf .git
+'''
+### #Setup
 
-Setup
+### -Create Virtual Environment
 
-Create Virtual Environment
-
-Mac:
+### #Mac:
 
 python3 -m venv venv
 source venv/bin/activate
 
-Windows:
-
+### #Windows:
+'''
 pip install virtualenv 
 virtualenv venv 
 venv\Scripts\activate.bat 
-
-Install Dependencies
-
+'''
+### -Install Dependencies
+'''
 pip install --upgrade pip
 pip install -r requirements.txt
+'''
 
-Migrate to Database
-
+### -Migrate to Database
+'''
 python manage.py migrate
 python manage.py createsuperuser
+'''
 
-Run Application
-
+### -Run Application
+'''
 python manage.py runserver
+'''
 
-Generate Secret Key (Important for Deployment)
-
+### #Generate Secret Key (Important for Deployment)
+'''
 python manage.py shell
 from django.core.management.utils import get_random_secret_key
 print(get_random_secret_key())
 exit()
+'''
+<br><br><br>
+### #Running the Application<br>
 
-Running the Application
-
-To run the Django live chat application integrated with SageMath, use the following command:
-
+### #To run the Django live chat application integrated with SageMath, use the following command:
+'''
 python manage.py runserver --noreload
+'''
+### -Database Management
 
-Database Management
+### -The application uses SQLite for managing users and chat groups. You can access and manage the database directly through SQLite.
 
-The application uses SQLite for managing users and chat groups. You can access and manage the database directly through SQLite.
+### #Notes
 
-Notes
+### >>Ensure the Sage environment is activated before running the Django application to avoid dependency issues.
 
-Ensure the Sage environment is activated before running the Django application to avoid dependency issues.
-
-The --noreload flag is used to prevent automatic server reloads, which can interfere with certain SageMath operations.
+### >>The --noreload flag is used to prevent automatic server reloads, which can interfere with certain SageMath operations.
